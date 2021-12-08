@@ -226,3 +226,36 @@
 #page_header{
   height:fit-content;
 }
+
+#class_description_box{
+  min-height: 200px;
+  max-height: fit-content;
+  line-height: 15px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width:200px;
+
+}
+
+#contact{
+  height: fit-content;
+}
+
+#contact_form{
+display: flex;
+flex-direction: column;
+}
+
+#contact_form > *{
+margin-top: 5px;
+width:100%;
+border:solid .5px rgba(0 0 0 .7);
+border-radius: 5px;
+}
+
+#contact_form > button{
+  margin-top: 5px;
+  width:100%;
+  border:none;
+  border-radius: 5px;
+  }
