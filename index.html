@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -46,11 +46,11 @@
       href="./assets/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <script
       src="https://kit.fontawesome.com/ea22e6cb6e.js"
       crossorigin="anonymous"
     ></script>
-
   </head>
 
   <body id="page-top">
@@ -138,17 +138,17 @@
             />
             <p class="lead mb-5">
               <span
-                >I am former teacher turned software developer. I have recently
-                completed an online software coding bootcamp with the
+                >I am a former teacher-turned software developer. I have recently
+                completed an online software coding boot camp with the
                 organization </span
               ><a style="text-decoration: none" href="https://appacademy.com/"
                 >App Academy</a
               ><span
-                >. During the course I learned multiple languages and
+                >. During the course, I learned multiple languages and
                 frameworks, worked on solo and paired programming, and produced
                 complete full-stack projects with the skills I had learned. I
-                live in San Antonio, Texas and am open to remote or on-site
-                work. I amexcited to break into the industry and learn and grow
+                live in San Antonio, Texas, and am open to remote or on-site
+                work. I am excited to break into the industry and learn and grow
                 while working with a great team on an exciting project.
               </span>
             </p>
@@ -253,6 +253,14 @@
         </div>
         <div class="row g-0">
           <div class="col-lg-6">
+            <div class='project_languages_container'>
+              <ul class='languages-list' >
+                <li class='languages-list-item'><i class="devicon-react-original colored"></i></li>
+                <li class='languages-list-item'><i class="devicon-express-original colored"></i></li>
+                <li class='languages-list-item'><i class="devicon-postgresql-plain colored"></i></li>
+                <li class='languages-list-item'><i class="devicon-nodejs-plain colored"></i></li>
+              </ul>
+            </div>
             <a
               class="portfolio-item"
               href="https://quarrel-wziller.herokuapp.com/"
@@ -289,8 +297,24 @@
                 src="https://wziller-personal-portfolio.s3.us-east-2.amazonaws.com/project-images/chelseas-cookies.PNG"
               />
             </a>
+            <div class='project_languages_container'>
+              <ul class='languages-list' >
+                <li class='languages-list-item'><i class="devicon-react-original colored"></i></li>
+                <li class='languages-list-item'><i class="devicon-flask-original colored"></i></li>
+                <li class='languages-list-item'><i class="devicon-postgresql-plain colored"></i></li>
+                <li class='languages-list-item'><i class="devicon-nodejs-plain colored"></i></li>
+              </ul>
+            </div>
           </div>
           <div class="col-lg-6">
+            <div class='project_languages_container'>
+              <ul class='languages-list' >
+                <li class='languages-list-item'><span class="iconify" data-icon="file-icons:pug"></span></li>
+                <li class='languages-list-item'><i class="devicon-express-original colored"></i></li>
+                <li class='languages-list-item'><i class="devicon-postgresql-plain colored"></i></li>
+                <li class='languages-list-item'><i class="devicon-nodejs-plain colored"></i></li>
+              </ul>
+            </div>
             <a
               class="portfolio-item"
               href="https://remember-the-crud.herokuapp.com/"
@@ -311,7 +335,34 @@
               />
             </a>
           </div>
-          <div class="col-lg-6"></div>
+          <div class="col-lg-6">
+            <a
+              class="portfolio-item"
+              href="https://ignored-group4.herokuapp.com/"
+              target="_blank"
+            >
+              <div class="caption">
+                <div class="caption-content">
+                  <h2>Ignored</h2>
+                  <p class="mb-0">A discord clone.</p>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="https://wziller-personal-portfolio.s3.us-east-2.amazonaws.com/project-images/ignored.PNG"
+                target="_blank"
+                style="overflow: hidden;"
+              />
+            </a>
+            <div class='project_languages_container'>
+              <ul class='languages-list' >
+                <li class='languages-list-item'><i class="devicon-react-original colored"></i></li>
+                <li class='languages-list-item'><i class="devicon-flask-original colored"></i></li>
+                <li class='languages-list-item'><i class="devicon-postgresql-plain colored"></i></li>
+                <li class='languages-list-item'><i class="devicon-nodejs-plain colored"></i></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -336,24 +387,33 @@
             action="https://formsubmit.co/willziller@gmail.com"
             method="POST"
           >
-            <input class="form-control" type="text" name="name" placeholder="Name" required />
-            <input class="form-control" type="email" name="email" required placeholder="Email" />
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              required
+              placeholder="Email"
+            />
             <textarea
-            class="form-control"
-            aria-label="With textarea"
-            placeholder="How can I help?"
-            type="description"
-            name="description"
+              class="form-control"
+              aria-label="With textarea"
+              placeholder="How can I help?"
+              type="description"
+              name="description"
             ></textarea>
             <input
               type="hidden"
               name="_next"
               value="https://www.williamziller.dev/"
             />
-            <button
-            type="submit"
-            class="input_field"
-            >Send</button>
+            <button type="submit" class="input_field">Send</button>
           </form>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
@@ -392,7 +452,8 @@
               class="link-light social-link rounded-circle"
               href="https://angel.co/u/william-h-ziller"
               target="_blank"
-              ><i class="fab fa-angellist"></i></a>
+              ><i class="fab fa-angellist"></i
+            ></a>
           </li>
         </ul>
         <p class="text-muted mb-0 small">
