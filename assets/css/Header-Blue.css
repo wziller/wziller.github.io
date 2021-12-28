@@ -230,8 +230,12 @@
 .img-fluid{
   height:268px;;
 }
-.caption{
+.caption,
+.caption > img{
   height:100%;
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px;
 }
 #page_header{
   height:fit-content;
@@ -278,6 +282,10 @@ border-radius: 5px;
     width: auto;
     border-radius: 15px;
   }
+  .col-lg-6 > img{
+    width: auto;
+    border-radius: 5px;
+  }
   .container{
     display: flex;
     flex-direction: column;
@@ -286,17 +294,19 @@ border-radius: 5px;
   .g-0{
     width:fit-content;
     align-items: center;
+
   }
   .project_languages_container{
     width:100%;
     display: flex;
+    margin-top: 5px;
     position: absolute;
     bottom:0;
     right:0;
     left: 0;
     justify-content: center;
     z-index:1;
-    background-color: rgba(255,255,255,1);
+    background-color: transparent;
   }
 
   .languages-list{
@@ -307,10 +317,38 @@ border-radius: 5px;
     justify-content: center;
   }
 
-
-  .languages-list-item > svg,
   .languages-list-item > i{
-    width: 36px;
-    font-size: 36px;
+    width: 25px;
+    font-size: 25px;
+    padding:10px;
+  }
 
+  .iconify{
+    width:25px;
+    height:25px;
+    margin-right: 5px;;
+  }
+
+  .carousel-caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* border: 2px solid black; */
+    color: black;
+    border-radius: 5px;
+  }
+  .carousel-indicators{
+    transform: translateY(50px);
+  }
+  #project_arrow_left,
+  #project_arrow_right{
+    height:25px;
+    width:25px;
+    color: crimson;
+    background-color: transparent;
+  }
+  .carousel-control-next{
+    background-color: transparent;
+    
   }
